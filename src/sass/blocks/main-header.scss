@@ -1,0 +1,39 @@
+.main-header {
+  margin-top: 54px;
+}
+
+.main-header__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header__photo {
+  border-radius: 50%;
+  box-shadow: -7px 7px 1px $grey;
+}
+
+.main-header__title {
+  text-align: center;
+  margin: 34px 0 21px 0;
+}
+
+.main-header__description {
+  text-align: center;
+  margin: 0 0 27px 0;
+}
+
+.main-header__master-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: $white;
+  display: block;
+  background-color: $red;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.4s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,84 @@
+.works__title {
+  text-align: center;
+}
+
+.works__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.works__subtitle {
+  font-weight: 400;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--install {
+    &::before {
+      background-image: url("/icons/install.svg");
+    }
+  }
+
+  &--repair {
+    &::before {
+      background-image: url("/icons/repair.svg");
+    }
+  }
+}
+
+.works__list {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin-top: 25px;
+
+  &--install {
+    row-gap: 40px;
+    align-items: center;
+  }
+
+  &--repair {
+    row-gap: 15px;
+    border-radius: 10px;
+    list-style: georgian;
+  }
+}
+
+.works__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  img {
+    border-radius: 20px;
+  }
+
+  p {
+    letter-spacing: 1px;
+    color: $white;
+    background-color: $blue;
+    width: max-content;
+    padding: 7px 15px;
+    border-radius: 20px;
+  }
+
+  &--install {
+    align-items: center;
+  }
+
+  &--repair {
+    align-items: start;
+    border-bottom: 1px solid $red;
+  }
+}

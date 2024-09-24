@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  padding: 35px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 40px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 50px 45px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    padding: 60px 55px;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 70px 75px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    padding: 80px 95px;
+  }
+}

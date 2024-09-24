@@ -1,0 +1,43 @@
+.main-footer__time {
+  text-align: center;
+  position: relative;
+  width: auto;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-image: url("/icons/calendar.svg");
+  }
+}
+
+.main-footer__socials-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.main-footer__socials-item {
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__socials-link {
+  text-decoration: none;
+  color: $darkblue;
+  padding: 2px 10px;
+  border: 1px solid $grey;
+  border-radius: 15px;
+}
+
+.main-footer__copyright {
+  text-align: center;
+  margin-top: 15px;
+}

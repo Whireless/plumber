@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Generisch Sans";
+  src: url("/fonts/GenerischSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Generisch Sans";
+  src: url("/fonts/GenerischSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Generisch Sans";
+  src: url("/fonts/GenerischSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Generisch Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: $darkblue;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 320px;
+  min-height: 100vh;
+}
