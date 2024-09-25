@@ -7,6 +7,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 35px;
+
+  &--repair {
+    margin-top: 50px;
+  }
 }
 
 .works__subtitle {
@@ -50,19 +54,25 @@
 
   &--repair {
     row-gap: 15px;
-    border-radius: 10px;
-    list-style: georgian;
+  }
+
+  @media (min-width: $smart) {
+    width: 360px;
+
+    &--install {
+      row-gap: 50px;
+    }
+
+    &--repair {
+      row-gap: 20px;
+    }
   }
 }
 
 .works__item {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
-
-  img {
-    border-radius: 20px;
-  }
+  row-gap: 13px;
 
   p {
     letter-spacing: 1px;
@@ -80,5 +90,14 @@
   &--repair {
     align-items: start;
     border-bottom: 1px solid $red;
+  }
+}
+
+.works__work-img {
+  border-radius: 20px;
+
+  @media (min-width: $smart) {
+    width: 360px;
+    height: 375px;
   }
 }

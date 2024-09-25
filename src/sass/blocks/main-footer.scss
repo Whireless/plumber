@@ -16,12 +16,18 @@
     background-repeat: no-repeat;
     background-image: url("/icons/calendar.svg");
   }
+
+  @media (min-width: $smart) {
+    &::before {
+      left: 45px;
+    }
+  }
 }
 
 .main-footer__socials-list {
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
+  row-gap: 10px;
 }
 
 .main-footer__socials-item {

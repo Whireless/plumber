@@ -36,4 +36,9 @@ body {
   grid-template-rows: auto 1fr auto;
   min-width: 320px;
   min-height: 100vh;
+
+  @media (min-width: $tablet) {
+    font-size: 19px;
+    line-height: 27px;
+  }
 }

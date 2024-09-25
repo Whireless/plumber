@@ -10,7 +10,11 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 25px;
+
+  @media (min-width: $smart) {
+    row-gap: 35px;
+  }
 }
 
 .advantages__item {

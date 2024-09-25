@@ -11,6 +11,12 @@
 .main-header__photo {
   border-radius: 50%;
   box-shadow: -7px 7px 1px $grey;
+
+  @media (min-width: $smart) {
+    width: 230px;
+    height: 240px;
+
+  }
 }
 
 .main-header__title {
