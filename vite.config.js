@@ -20,6 +20,15 @@ export default defineConfig({
       png: {
         quality: 75,
       },
+      jpg: {
+        quality: 75,
+      },
+      jpeg: {
+        quality: 75,
+      },
+      webp: {
+        quality: 75,
+      },
     }),
     // createSvgSpritePlugin({
     //   svgFolder: SVG_FOLDER_PATH,

@@ -39,6 +39,15 @@
       background-image: url("/icons/repair.svg");
     }
   }
+
+  @media (min-width: $tablet) {
+    &::before {
+      top: -15px;
+      left: -55px;
+      width: 55px;
+      height: 55px;
+    }
+  }
 }
 
 .works__list {
@@ -65,6 +74,25 @@
 
     &--repair {
       row-gap: 20px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 30px;
+
+    &--install {
+      width: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 35px;
+    }
+
+    &--repair {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 }
@@ -99,5 +127,10 @@
   @media (min-width: $smart) {
     width: 360px;
     height: 375px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 320px;
+    height: 305px;
   }
 }

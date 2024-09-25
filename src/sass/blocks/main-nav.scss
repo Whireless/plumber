@@ -17,6 +17,11 @@
   @media (min-width: $smart) {
     padding: 20px 30px;
   }
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
 }
 
 .main-nav__number {
@@ -37,6 +42,13 @@
     color: inherit;
     width: 135%;
   }
+
+  @media (min-width: $tablet) {
+    &::before {
+      left: 15px;
+      bottom: -20px;
+    }
+  }
 }
 
 .main-nav__list {
@@ -53,22 +65,34 @@
   padding: 30px;
   transition: 0.4s;
   transform: translateX(-120%);
+
+  @media (min-width: $tablet) {
+    position: static;
+    flex-direction: row;
+    column-gap: 20px;
+    height: auto;
+    padding: 0;
+    transform: translateX(0);
+  }
 }
 
-.main-nav__item {
-  a {
-    font-size: 22px;
-    text-decoration: none;
-    color: $black;
-    transition: 0.4s;
-    border: 1px solid transparent;
-    padding: 10px 20px;
-    border-radius: 5px;
+.main-nav__link {
+  font-size: 22px;
+  text-decoration: none;
+  color: $black;
+  transition: 0.4s;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
 
-    &:hover {
-      color: $darkblue;
-      border: 1px solid $red;
-    }
+  &:hover {
+    color: $darkblue;
+    border: 1px solid $red;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 19px;
+    padding: 5px 10px;
   }
 }
 
@@ -81,6 +105,10 @@
   border: none;
   cursor: pointer;
   margin-left: auto;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav__button-elem {

@@ -22,12 +22,29 @@
       left: 45px;
     }
   }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+
+    &::before {
+      width: 35px;
+      height: 35px;
+      top: -5px;
+      left: 180px;
+    }
+  }
 }
 
 .main-footer__socials-list {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .main-footer__socials-item {
@@ -46,4 +63,8 @@
 .main-footer__copyright {
   text-align: center;
   margin-top: 15px;
+
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+  }
 }

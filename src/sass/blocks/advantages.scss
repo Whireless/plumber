@@ -15,6 +15,13 @@
   @media (min-width: $smart) {
     row-gap: 35px;
   }
+
+  @media (min-width: $tablet) {
+    margin-top: 35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .advantages__item {
@@ -54,5 +61,9 @@
 
   &:nth-of-type(6) {
     background-image: url("/icons/six.svg");
+  }
+
+  @media (min-width: $tablet) {
+    width: 295px;
   }
 }
