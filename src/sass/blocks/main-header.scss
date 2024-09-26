@@ -6,7 +6,11 @@
   }
 
   @media (min-width: $tablet) {
-    margin-top: 69px;
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 66px;
   }
 }
 
@@ -20,6 +24,12 @@
     grid-template-columns: 240px 1fr;
     grid-template-rows: 90px 120px 45px;
     column-gap: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 110px 120px 50px;
+    row-gap: 15px;
   }
 }
 
@@ -37,6 +47,11 @@
     width: 250px;
     height: 260px;
   }
+
+  @media (min-width: $desktop) {
+    width: 300px;
+    height: 310px;
+  }
 }
 
 .main-header__title {
@@ -46,6 +61,11 @@
   @media (min-width: $tablet) {
     font-size: 27px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 
@@ -58,6 +78,10 @@
     font-size: 17px;
     grid-column: 2;
     margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 21px;
   }
 }
 
@@ -80,5 +104,11 @@
     width: max-content;
     justify-self: center;
     margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 19px;
+    padding: 15px 25px;
+    border-radius: 25px;
   }
 }
