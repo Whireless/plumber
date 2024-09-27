@@ -19,8 +19,26 @@
   }
 
   @media (min-width: $desktop) {
+    margin-top: 45px;
+
     &--repair {
-      margin-top: 70px;
+      margin-top: 75px;
+    }
+  }
+
+  @media (min-width: $laptop) {
+    &--install {
+      margin-top: 50px;
+    }
+  }
+
+  @media (min-width: $laptopPlus) {
+    &--install {
+      margin-top: 60px;
+    }
+
+    &--repair {
+      margin-top: 85px;
     }
   }
 }
@@ -58,6 +76,15 @@
       left: -55px;
       width: 55px;
       height: 55px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      width: 60px;
+      height: 60px;
+      top: -18px;
+      left: -65px;
     }
   }
 }
@@ -125,8 +152,22 @@
   }
 
   @media (min-width: $desktopPlus) {
+    &--install {
+      row-gap: 70px;
+    }
+
     &--repair {
       grid-template-columns: 200px 190px 220px;
+    }
+  }
+
+  @media (min-width: $laptopPlus) {
+    &--install {
+      row-gap: 80px;
+    }
+
+    &--repair {
+      grid-template-columns: 225px 220px 240px;
     }
   }
 }
@@ -163,6 +204,12 @@
 
     &--repair {
       padding: 4px 15px;
+    }
+  }
+
+  @media (min-width: $laptopPlus) {
+    &--repair {
+      padding: 5px 20px;
     }
   }
 }

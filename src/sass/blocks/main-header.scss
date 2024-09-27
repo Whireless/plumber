@@ -38,6 +38,12 @@
     grid-template-rows: 90px 80px 50px;
     row-gap: 30px;
   }
+
+  @media (min-width: $laptopPlus) {
+    grid-template-columns: 340px 690px;
+    grid-template-rows: 90px 100px 60px;
+    row-gap: 35px;
+  }
 }
 
 .main-header__photo {
@@ -65,6 +71,11 @@
     height: 315px;
     box-shadow: -10px 10px 10px $grey;
   }
+
+  @media (min-width: $laptopPlus) {
+    width: 315px;
+    height: 335px;
+  }
 }
 
 .main-header__title {
@@ -85,6 +96,11 @@
   @media (min-width: $desktopPlus) {
     font-size: 41px;
     line-height: 44px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    font-size: 46px;
+    line-height: 49px;
   }
 }
 
@@ -107,6 +123,11 @@
   @media (min-width: $desktopPlus) {
     font-size: 22px;
     line-height: 28px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    font-size: 26px;
+    line-height: 33px;
   }
 }
 

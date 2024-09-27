@@ -49,4 +49,9 @@ body {
   @media (min-width: $desktopPlus) {
     font-size: 22px;
   }
+
+  @media (min-width: $laptopPlus) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }

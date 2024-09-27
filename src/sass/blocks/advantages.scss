@@ -26,6 +26,11 @@
   @media (min-width: $desktop) {
     margin-top: 50px;
   }
+
+  @media (min-width: $laptopPlus) {
+    row-gap: 40px;
+    column-gap: 40px;
+  }
 }
 
 .advantages__item {
@@ -80,5 +85,9 @@
     background-size: 65px 65px;
     width: 300px;
     padding: 85px 20px 20px 20px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    width: 345px;
   }
 }

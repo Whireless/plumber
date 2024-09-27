@@ -31,6 +31,14 @@
   @media (min-width: $desktopPlus) {
     padding: 30px 60px;
   }
+
+  @media (min-width: $laptop) {
+    padding: 30px 80px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    padding: 30px 100px;
+  }
 }
 
 .main-nav__number-block {
@@ -41,6 +49,10 @@
   @media (min-width: $desktop) {
     flex-direction: row;
     column-gap: 25px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    column-gap: 30px;
   }
 }
 
@@ -62,6 +74,11 @@
   @media (min-width: $desktop) {
     font-size: 14px;
     line-height: 14px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -96,6 +113,10 @@
   @media (min-width: $desktopPlus) {
     column-gap: 40px;
   }
+
+  @media (min-width: $laptopPlus) {
+    column-gap: 45px;
+  }
 }
 
 .main-nav__link {
@@ -123,6 +144,10 @@
 
   @media (min-width: $desktopPlus) {
     padding: 7px 20px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    font-size: inherit;
   }
 }
 
