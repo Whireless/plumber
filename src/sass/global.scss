@@ -45,4 +45,8 @@ body {
   @media (min-width: $desktop) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktopPlus) {
+    font-size: 22px;
+  }
 }

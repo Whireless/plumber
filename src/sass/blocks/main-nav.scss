@@ -22,6 +22,14 @@
     justify-content: space-between;
     padding: 20px 40px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 25px 45px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    padding: 30px 60px;
+  }
 }
 
 .main-nav__number {
@@ -93,6 +101,10 @@
   @media (min-width: $desktop) {
     column-gap: 35px;
   }
+
+  @media (min-width: $desktopPlus) {
+    column-gap: 40px;
+  }
 }
 
 .main-nav__link {
@@ -116,6 +128,10 @@
 
   @media (min-width: $desktop) {
     font-size: 22px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    padding: 7px 12px;
   }
 }
 

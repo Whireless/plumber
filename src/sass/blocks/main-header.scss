@@ -10,7 +10,11 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 66px;
+    margin-top: 76px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    margin-top: 86px;
   }
 }
 
@@ -21,21 +25,27 @@
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-template-rows: 90px 120px 45px;
-    column-gap: 40px;
+    grid-template-columns: 200px 390px;
+    grid-template-rows: 70px 90px 45px;
+    justify-content: space-around;
+    row-gap: 10px;
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 110px 120px 50px;
+    grid-template-columns: 245px 610px;
+    grid-template-rows: 90px 100px 50px;
     row-gap: 15px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    grid-template-columns: 330px 610px;
+    row-gap: 30px;
   }
 }
 
 .main-header__photo {
   border-radius: 50%;
-  box-shadow: -7px 7px 1px $grey;
+  box-shadow: -9px 9px 10px $grey;
 
   @media (min-width: $smart) {
     width: 230px;
@@ -44,13 +54,19 @@
 
   @media (min-width: $tablet) {
     grid-row: 1/-1;
-    width: 250px;
-    height: 260px;
+    width: 220px;
+    height: 230px;
   }
 
   @media (min-width: $desktop) {
+    width: 245px;
+    height: 255px;
+  }
+
+  @media (min-width: $desktopPlus) {
     width: 300px;
-    height: 310px;
+    height: 315px;
+    box-shadow: -10px 10px 10px $grey;
   }
 }
 
@@ -59,13 +75,19 @@
   margin: 34px 0 21px 0;
 
   @media (min-width: $tablet) {
-    font-size: 27px;
+    font-size: 26px;
+    line-height: 29px;
     margin: 0;
   }
 
   @media (min-width: $desktop) {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 41px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    font-size: 41px;
+    line-height: 44px;
   }
 }
 
@@ -81,7 +103,13 @@
   }
 
   @media (min-width: $desktop) {
-    font-size: 21px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -92,7 +120,7 @@
   display: block;
   background-color: $red;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 30px;
   transition: 0.4s;
 
   &:hover {
@@ -109,6 +137,5 @@
   @media (min-width: $desktop) {
     font-size: 19px;
     padding: 15px 25px;
-    border-radius: 25px;
   }
 }
