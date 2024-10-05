@@ -8,7 +8,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 // const SVG_FOLDER_PATH = path.resolve(SRC_PATH, 'icons');
 
 export default defineConfig({
-  // base: '/plumber', // Github
+  base: '/plumber', // Github
   server: {
     open: true,
   },
