@@ -2,12 +2,7 @@
   background-color: $lightblue;
 }
 
-.advantages__title {
-  text-align: center;
-}
-
 .advantages__list {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
@@ -17,19 +12,22 @@
   }
 
   @media (min-width: $tablet) {
-    margin-top: 35px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 38px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 50px;
+    gap: 40px;
   }
 
-  @media (min-width: $laptopPlus) {
-    row-gap: 40px;
-    column-gap: 40px;
+  @media (min-width: $desktopPlus) {
+    gap: 50px;
+  }
+
+  @media (min-width: $laptop) {
+    gap: 55px;
   }
 }
 
@@ -73,11 +71,11 @@
   }
 
   @media (min-width: $tablet) {
-    width: 295px;
+    width: 293px;
   }
 
   @media (min-width: $desktop) {
-    width: 275px;
+    width: 271px;
     justify-content: center;
   }
 
@@ -88,6 +86,6 @@
   }
 
   @media (min-width: $laptopPlus) {
-    width: 345px;
+    width: 336px;
   }
 }

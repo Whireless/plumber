@@ -6,54 +6,14 @@
   padding-bottom: 5px;
   border-bottom: 1px solid $grey;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: 15px;
-    width: 25px;
-    height: 25px;
-    background-repeat: no-repeat;
-    background-image: url("/icons/calendar.svg");
-  }
-
-  @media (min-width: $smart) {
-    &::before {
-      left: 45px;
-    }
-  }
-
   @media (min-width: $tablet) {
     margin-bottom: 25px;
     padding-bottom: 10px;
-
-    &::before {
-      width: 35px;
-      height: 35px;
-      top: -8px;
-      left: 180px;
-    }
   }
 
   @media (min-width: $desktop) {
     margin-bottom: 30px;
     padding-bottom: 20px;
-
-    &::before {
-      width: 40px;
-      height: 40px;
-      top: -10px;
-      left: 320px;
-    }
-  }
-
-  @media (min-width: $desktopPlus) {
-    &::before {
-      width: 43px;
-      height: 43px;
-      top: -12px;
-      left: 390px;
-    }
   }
 }
 
@@ -98,5 +58,18 @@
   }
   @media (min-width: $desktop) {
     margin-top: 35px;
+  }
+}
+
+.main-footer__dev {
+  font-size: 13px;
+  line-height: 16px;
+  color: $grey;
+  display: block;
+  width: max-content;
+  margin: 10px auto 0 auto;
+
+  @media (min-width: $desktop) {
+    margin: 0 0 0 auto;
   }
 }
