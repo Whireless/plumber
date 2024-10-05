@@ -73,3 +73,56 @@
     margin: 0 0 0 auto;
   }
 }
+
+.main-footer__button-up {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  background-image: url("../icons/arrow.svg");
+  border: 2px solid $darkblue;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(200%);
+  transition: 0.4s;
+
+  &--active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @media (min-width: $smart) {
+    right: 30px;
+  }
+
+  @media (min-width: $tablet) {
+    right: 40px;
+    bottom: 45px;
+    width: 45px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    right: 45px;
+    bottom: 100px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    right: 60px;
+    bottom: 110px;
+    width: 50px;
+    height: 50px;
+  }
+
+  @media (min-width: $laptop) {
+    right: 80px;
+    bottom: 120px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    right: 100px;
+    bottom: 125px;
+  }
+}
