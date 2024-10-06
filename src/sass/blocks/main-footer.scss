@@ -4,7 +4,7 @@
   width: auto;
   margin-bottom: 20px;
   padding-bottom: 5px;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $darkblue;
 
   @media (min-width: $tablet) {
     margin-bottom: 25px;
@@ -37,7 +37,7 @@
   text-decoration: none;
   color: $darkblue;
   padding: 2px 10px;
-  border: 1px solid $grey;
+  border: 1px solid $darkblue;
   border-radius: 20px;
 
   @media (min-width: $desktop) {
@@ -70,7 +70,7 @@
   margin: 10px auto 0 auto;
 
   @media (min-width: $desktop) {
-    margin: 0 0 0 auto;
+    margin: 0 auto 0 0;
   }
 }
 
@@ -95,34 +95,32 @@
 
   @media (min-width: $smart) {
     right: 30px;
-  }
-
-  @media (min-width: $tablet) {
-    right: 40px;
-    bottom: 45px;
     width: 45px;
     height: 45px;
   }
 
+  @media (min-width: $tablet) {
+    right: 40px;
+    bottom: 50px;
+  }
+
   @media (min-width: $desktop) {
     right: 45px;
-    bottom: 100px;
+    bottom: 70px;
   }
 
   @media (min-width: $desktopPlus) {
     right: 60px;
-    bottom: 110px;
     width: 50px;
     height: 50px;
   }
 
   @media (min-width: $laptop) {
     right: 80px;
-    bottom: 120px;
   }
 
   @media (min-width: $laptopPlus) {
     right: 100px;
-    bottom: 125px;
+    bottom: 80px;
   }
 }
