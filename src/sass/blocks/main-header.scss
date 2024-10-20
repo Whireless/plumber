@@ -22,33 +22,33 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 200px 390px;
-    grid-template-rows: 70px 90px 45px;
+    grid-template-rows: 55px 90px 45px;
     justify-content: space-around;
-    row-gap: 10px;
+    row-gap: 11px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 245px 610px;
-    grid-template-rows: 90px 100px 50px;
+    grid-template-rows: 86px 100px 55px;
     row-gap: 15px;
   }
 
   @media (min-width: $desktopPlus) {
     grid-template-columns: 330px 610px;
-    grid-template-rows: 90px 80px 50px;
+    grid-template-rows: 90px 105px 55px;
     row-gap: 30px;
   }
 
   @media (min-width: $laptopPlus) {
     grid-template-columns: 340px 690px;
-    grid-template-rows: 90px 100px 60px;
+    grid-template-rows: 95px 125px 59px;
     row-gap: 35px;
   }
 }
 
 .main-header__photo {
   border-radius: 50%;
-  box-shadow: -9px 9px 10px $grey;
+  box-shadow: -10px 10px 10px $grey;
 
   @media (min-width: $smart) {
     width: 230px;
@@ -121,39 +121,11 @@
   }
 
   @media (min-width: $desktopPlus) {
-    font-size: 22px;
     line-height: 28px;
   }
 
   @media (min-width: $laptopPlus) {
     font-size: 26px;
     line-height: 33px;
-  }
-}
-
-.main-header__master-link {
-  font-size: 18px;
-  text-decoration: none;
-  color: $white;
-  display: block;
-  background-color: $red;
-  padding: 10px 20px;
-  border-radius: 30px;
-  transition: 0.4s;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  @media (min-width: $tablet) {
-    grid-column: 2;
-    width: max-content;
-    justify-self: center;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop) {
-    font-size: 19px;
-    padding: 15px 25px;
   }
 }

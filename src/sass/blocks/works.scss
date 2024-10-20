@@ -1,73 +1,44 @@
-.works__info {
+.works__block {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &--repair {
+    position: relative;
     margin-top: 55px;
   }
 
   @media (min-width: $tablet) {
     &--repair {
-      margin-top: 65px;
+      align-items: start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 70px;
     }
   }
 
   @media (min-width: $desktop) {
     &--repair {
-      margin-top: 80px;
+      margin-top: 95px;
     }
   }
 
   @media (min-width: $laptopPlus) {
     &--repair {
-      margin-top: 90px;
+      margin-top: 110px;
     }
   }
 }
 
 .works__subtitle {
-  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: -40px;
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &--install {
-    &::before {
-      background-image: url("/icons/install.svg");
-    }
-  }
-
-  &--repair {
-    &::before {
-      background-image: url("/icons/repair.svg");
-    }
-  }
-
   @media (min-width: $tablet) {
-    &::before {
-      top: -15px;
-      left: -55px;
-      width: 55px;
-      height: 55px;
-    }
-  }
-
-  @media (min-width: $tablet) {
-    &::before {
-      width: 60px;
-      height: 60px;
-      top: -18px;
-      left: -65px;
+    &--repair {
+      text-align: left;
     }
   }
 }
@@ -77,130 +48,140 @@
   flex-direction: column;
   align-items: center;
   width: 280px;
-  margin-top: 30px;
   line-height: arabic-indic;
 
   &--install {
-    row-gap: 40px;
+    row-gap: 50px;
+    margin-top: 30px;
   }
 
   &--repair {
-    width: 228px;
-    row-gap: 15px;
-    border: 1px solid $darkblue;
-    padding: 15px 25px;
-    border-radius: 30px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    margin-top: 15px;
   }
 
   @media (min-width: $smart) {
     &--install {
-      row-gap: 50px;
+      row-gap: 70px;
       width: 360px;
     }
 
     &--repair {
-      row-gap: 20px;
-      width: 308px;
-      padding: 20px 25px;
+      row-gap: 27px;
+      width: 360px;
+      margin-top: 20px;
     }
   }
 
   @media (min-width: $tablet) {
     justify-content: space-around;
-    margin-top: 40px;
 
     &--install {
       flex-direction: row;
       flex-wrap: wrap;
-      row-gap: 55px;
+      row-gap: 80px;
       width: auto;
+      margin-top: 40px;
     }
 
     &--repair {
-      display: grid;
-      grid-template-columns: 160px 175px;
-      justify-items: center;
-      width: 600px;
-      row-gap: 30px;
-      padding: 25px;
+      width: 170px;
+      row-gap: 33px;
+      margin-top: 35px;
     }
   }
 
   @media (min-width: $desktop) {
-    margin-top: 55px;
-
     &--install {
-      row-gap: 60px;
+      row-gap: 90px;
+      margin-top: 55px;
     }
 
     &--repair {
-      display: grid;
-      grid-template-columns: 200px 170px 200px;
       column-gap: 65px;
-      row-gap: 40px;
-      width: 850px;
-      padding: 30px;
+      row-gap: 39px;
+      width: 200px;
     }
   }
 
   @media (min-width: $desktopPlus) {
-    margin-top: 60px;
-
     &--install {
-      row-gap: 70px;
+      row-gap: 100px;
+      margin-top: 60px;
     }
 
     &--repair {
       grid-template-columns: 200px 190px 220px;
-      row-gap: 50px;
-      padding: 40px;
-    }
-  }
-
-  @media (min-width: $laptop) {
-    &--repair {
-      padding: 50px;
-      row-gap: 60px;
+      row-gap: 40px;
+      margin-top: 30px;
     }
   }
 
   @media (min-width: $laptopPlus) {
     &--install {
-      row-gap: 80px;
+      row-gap: 110px;
     }
 
     &--repair {
-      grid-template-columns: 225px 220px 240px;
+      row-gap: 45px;
+      width: 220px;
+      margin-top: 35px;
     }
   }
 }
 
 .works__item {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   row-gap: 13px;
-
-  p {
-    color: $white;
-    background-color: $blue;
-    width: max-content;
-    padding: 7px 15px;
-    border-radius: 20px;
-  }
 
   &--install {
     align-items: center;
   }
 
   &--repair {
-    border-bottom: 1px solid $darkblue;
+    position: relative;
     align-self: start;
     width: max-content;
+    padding-left: 30px;
+
+    &:nth-of-type(even) {
+      margin-left: auto;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 5px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("/icons/repair.svg");
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media (min-width: $smart) {
+    &::before {
+      top: -7px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   @media (min-width: $tablet) {
     &--repair {
-      padding-bottom: 1px;
+      &:nth-of-type(even) {
+        margin-left: 0;
+      }
+
+      &::before {
+        left: 2px;
+      }
     }
   }
 
@@ -208,41 +189,124 @@
     &--install {
       row-gap: 15px;
     }
-  }
 
-  @media (min-width: $desktopPlus) {
     &--repair {
-      padding-bottom: 2px;
+      padding-left: 35px;
     }
   }
 
   @media (min-width: $laptopPlus) {
     &--repair {
-      padding-bottom: 3px;
+      &::before {
+        width: 45px;
+        height: 45px;
+      }
     }
   }
 }
 
+.works__work-name {
+  font-weight: 400;
+  position: absolute;
+  transform: translateX(-110px) translateY(70px) rotate(286deg);
+
+  @media (min-width: $smart) {
+    transform: translateX(-130px) translateY(70px) rotate(286deg);
+  }
+
+  @media (min-width: $tablet) {
+    transform: translateX(-120px) translateY(75px) rotate(286deg);
+  }
+
+  @media (min-width: $desktop) {
+    transform: translateX(-115px) translateY(75px) rotate(286deg);
+  }
+
+  @media (min-width: $desktopPlus) {
+    transform: translateX(-130px) translateY(75px) rotate(286deg);
+  }
+
+  @media (min-width: $laptopPlus) {
+    transform: translateX(-135px) translateY(85px) rotate(286deg);
+  }
+}
+
 .works__work-img {
-  border-radius: 20px;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 
   @media (min-width: $smart) {
     width: 360px;
-    height: 330px;
+    height: 310px;
   }
 
   @media (min-width: $tablet) {
     width: 320px;
-    height: 305px;
+    height: 285px;
   }
 
   @media (min-width: $desktop) {
     width: 290px;
-    height: 265px;
+    height: 250px;
   }
 
   @media (min-width: $desktopPlus) {
     width: 350px;
-    height: 310px;
+    height: 300px;
   }
+}
+
+.works__repair-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin-top: 35px;
+
+  @media (min-width: $tablet) {
+    align-self: center;
+    width: 370px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 480px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    width: 600px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    width: 700px;
+  }
+}
+
+.works__dearly {
+  margin-top: 25px;
+
+  @media (min-width: $desktopPlus) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    margin-top: 55px;
+  }
+}
+
+.works__repair-title {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.works__repair-description {
+  margin-top: 10px;
+
+  @media (min-width: $tablet) {
+    margin-top: 15px;
+  }
+}
+
+.works__repair-no {
+  text-decoration-line: line-through;
+  font-weight: 100;
 }
