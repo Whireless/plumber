@@ -14,19 +14,19 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
-      margin-top: 70px;
+      margin-top: 80px;
     }
   }
 
   @media (min-width: $desktop) {
     &--repair {
-      margin-top: 95px;
+      margin-top: 100px;
     }
   }
 
   @media (min-width: $laptopPlus) {
     &--repair {
-      margin-top: 110px;
+      margin-top: 120px;
     }
   }
 }
@@ -63,8 +63,9 @@
 
   @media (min-width: $smart) {
     &--install {
-      row-gap: 70px;
+      row-gap: 55px;
       width: 360px;
+      margin-top: 45px;
     }
 
     &--repair {
@@ -80,9 +81,8 @@
     &--install {
       flex-direction: row;
       flex-wrap: wrap;
-      row-gap: 80px;
       width: auto;
-      margin-top: 40px;
+      margin-top: 55px;
     }
 
     &--repair {
@@ -95,7 +95,7 @@
   @media (min-width: $desktop) {
     &--install {
       row-gap: 90px;
-      margin-top: 55px;
+      margin-top: 70px;
     }
 
     &--repair {
@@ -108,11 +108,9 @@
   @media (min-width: $desktopPlus) {
     &--install {
       row-gap: 100px;
-      margin-top: 60px;
     }
 
     &--repair {
-      grid-template-columns: 200px 190px 220px;
       row-gap: 40px;
       margin-top: 30px;
     }
@@ -121,6 +119,7 @@
   @media (min-width: $laptopPlus) {
     &--install {
       row-gap: 110px;
+      margin-top: 80px;
     }
 
     &--repair {
@@ -208,31 +207,32 @@
 .works__work-name {
   font-weight: 400;
   position: absolute;
-  transform: translateX(-110px) translateY(70px) rotate(286deg);
+  transform: translateX(-15px) translateY(15px) rotate(-14deg);
 
   @media (min-width: $smart) {
-    transform: translateX(-130px) translateY(70px) rotate(286deg);
+    font-size: 19px;
+    transform: translateX(-15px) translateY(20px) rotate(-14deg);
   }
 
   @media (min-width: $tablet) {
-    transform: translateX(-120px) translateY(75px) rotate(286deg);
+    transform: translateX(-15px) translateY(30px) rotate(-14deg);
   }
 
   @media (min-width: $desktop) {
-    transform: translateX(-115px) translateY(75px) rotate(286deg);
+    transform: translateX(-15px) translateY(25px) rotate(-14deg);
   }
 
   @media (min-width: $desktopPlus) {
-    transform: translateX(-130px) translateY(75px) rotate(286deg);
+    transform: translateX(-15px) translateY(15px) rotate(-14deg);
   }
 
   @media (min-width: $laptopPlus) {
-    transform: translateX(-135px) translateY(85px) rotate(286deg);
+    font-size: 20px;
   }
 }
 
 .works__work-img {
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
 
   @media (min-width: $smart) {
     width: 360px;
@@ -240,18 +240,49 @@
   }
 
   @media (min-width: $tablet) {
-    width: 320px;
-    height: 285px;
+    width: 430px;
+    height: 380px;
   }
 
   @media (min-width: $desktop) {
-    width: 290px;
-    height: 250px;
+    width: 390px;
+    height: 330px;
   }
 
   @media (min-width: $desktopPlus) {
-    width: 350px;
-    height: 300px;
+    width: 335px;
+    height: 285px;
+  }
+}
+
+.works__work-price {
+  font-weight: 400;
+  position: absolute;
+  transform: translateX(10px) translateY(210px) rotate(-15deg);
+
+  @media (min-width: $smart) {
+    font-size: 19px;
+    transform: translateX(10px) translateY(265px) rotate(-15deg);
+  }
+
+  @media (min-width: $tablet) {
+    transform: translateX(10px) translateY(325px) rotate(-15deg);
+  }
+
+  @media (min-width: $desktop) {
+    transform: translateX(10px) translateY(285px) rotate(-15deg);
+  }
+
+  @media (min-width: $desktopPlus) {
+    transform: translateX(10px) translateY(245px) rotate(-15deg);
+  }
+
+  @media (min-width: $laptopPlus) {
+    font-size: 20px;
+  }
+
+  span {
+    border-bottom: 1px solid $red;
   }
 }
 
@@ -307,6 +338,7 @@
 }
 
 .works__repair-no {
+  text-transform: uppercase;
   text-decoration-line: line-through;
   font-weight: 100;
 }

@@ -3,26 +3,26 @@
   padding: 35px 20px;
 
   @media (min-width: $smart) {
-    padding: 40px 30px;
+    padding: 45px 30px;
   }
 
   @media (min-width: $tablet) {
-    padding: 60px 40px;
+    padding: 65px 40px;
   }
 
   @media (min-width: $desktop) {
-    padding: 70px 45px;
+    padding: 75px 45px;
   }
 
   @media (min-width: $desktopPlus) {
-    padding: 80px 60px;
+    padding: 85px 60px;
   }
 
   @media (min-width: $laptop) {
-    padding: 90px 80px;
+    padding: 95px 80px;
   }
 
   @media (min-width: $laptopPlus) {
-    padding: 95px 100px;
+    padding: 100px 100px;
   }
 }
