@@ -1,34 +1,82 @@
 .main-footer {
   background-color: $lightblue;
-}
+  padding: 30px 20px;
 
-.main-footer__time {
-  text-align: center;
-  position: relative;
-  width: auto;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid $darkblue;
+  @media (min-width: $smart) {
+    padding: 30px;
+  }
 
   @media (min-width: $tablet) {
-    margin-bottom: 25px;
-    padding-bottom: 10px;
+    padding: 35px 40px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding: 35px 45px;
+  }
+
+  @media (min-width: $desktopPlus) {
+    padding: 35px 60px;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 35px 80px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    padding: 45px 100px;
+  }
+}
+
+.main-footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 25px;
+  }
+}
+
+.main-footer__time {
+  @media (min-width: $tablet) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: -15px;
+      width: 1px;
+      height: 1em;
+      background-color: $darkblue;
+    }
   }
 }
 
 .main-footer__socials-list {
   display: flex;
-  flex-direction: column;
-  row-gap: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid $darkblue;
 
   @media (min-width: $tablet) {
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $laptopPlus) {
+    padding-bottom: 12px;
   }
 }
 
@@ -39,35 +87,32 @@
 
 .main-footer__socials-link {
   text-decoration: none;
-  color: $darkblue;
-  padding: 2px 13px;
-  border: 1px solid transparent;
-  border-radius: 20px;
+  color: $grey2;
   transition: 0.4s;
 
   &:hover {
-    border: 1px solid $red;
+    color: $waterblue;
+  }
+}
+
+.main-footer__other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop) {
-    padding: 3px 20px;
-  }
-
-  @media (min-width: $laptopPlus) {
-    padding: 4px 25px;
+    margin-top: 35px;
   }
 }
 
 .main-footer__copyright {
-  text-align: center;
-  margin-top: 15px;
-
-  @media (min-width: $tablet) {
-    margin-top: 20px;
-  }
-  @media (min-width: $desktop) {
-    margin-top: 35px;
-  }
+  font-size: 15px;
 }
 
 .main-footer__dev {
@@ -76,10 +121,10 @@
   color: $grey;
   display: block;
   width: max-content;
-  margin: 10px auto 0 auto;
+  margin: 5px auto 0 auto;
 
-  @media (min-width: $desktop) {
-    margin: 0 auto 0 0;
+  @media (min-width: $tablet) {
+    margin: 0 0 0 auto;
   }
 }
 
@@ -91,7 +136,7 @@
   height: 40px;
   background-color: $white;
   background-image: url("../icons/arrow.svg");
-  border: 2px solid $darkblue;
+  border: 1px solid $waterblue;
   border-radius: 50%;
   opacity: 0;
   transform: translateY(200%);

@@ -1,12 +1,16 @@
 .main-header {
-  margin-top: 71px;
+  margin-top: 66px;
 
   @media (min-width: $smart) {
-    margin-top: 75px;
+    margin-top: 70px;
   }
 
   @media (min-width: $tablet) {
-    margin-top: 76px;
+    margin-top: 72px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 81px;
   }
 
   @media (min-width: $desktopPlus) {

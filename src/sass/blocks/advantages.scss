@@ -1,5 +1,10 @@
 .advantages {
   background-color: $lightblue;
+  scroll-margin-top: 1em;
+}
+
+.advantages__title {
+  margin: 0 auto;
 }
 
 .advantages__list {
@@ -120,7 +125,7 @@
   text-decoration: underline;
   font-size: 27px;
   line-height: 33px;
-  color: $red;
+  color: $waterblue;
 
   @media (min-width: $tablet) {
     font-size: 31px;
