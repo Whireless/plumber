@@ -1,0 +1,98 @@
+.faq__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+
+  @media (min-width: $tablet) {
+    row-gap: 15px;
+  }
+
+  @media (min-width: $laptop) {
+    row-gap: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    row-gap: 35px;
+  }
+}
+
+.faq__details {
+  width: 303px;
+  padding: 15px 20px;
+  border: 1px solid $waterblue;
+  border-radius: 30px;
+
+  &[open] {
+    .faq__question {
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 646px;
+    padding: 20px 25px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 1108px;
+    padding: 25px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1658px;
+    padding: 30px 35px;
+  }
+}
+
+.faq__question {
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/icons/close.svg");
+    transform: rotate(45deg);
+    transition: 0.4s;
+  }
+
+  @media (min-width: $tablet) {
+    &::after {
+      top: -5px;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media (min-width: $laptop) {
+    &::after {
+      top: -7px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+.faq__answer {
+  text-align: justify;
+  margin-top: 10px;
+
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+  }
+}

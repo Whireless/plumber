@@ -1,0 +1,184 @@
+.popup {
+  color: $darkblue;
+  text-align: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  height: 100vh;
+  z-index: 11;
+  transition: 0.4s;
+  opacity: 0;
+  transform: translateX(-110%);
+
+  &--open {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  // &--close {
+  //   transform: translateX(-120%);
+  // }
+}
+
+.popup__form {
+  position: absolute;
+  top: 150px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 305px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  background-color: $lightblue;
+  border-radius: 30px;
+
+  @media (min-width: $tablet) {
+    width: 360px;
+    row-gap: 20px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 400px;
+    row-gap: 25px;
+    padding: 30px 25px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 550px;
+    row-gap: 35px;
+    padding: 35px 30px;
+  }
+}
+
+.popup__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  border: none;
+
+  @media (min-width: $desktop) {
+    row-gap: 25px;
+  }
+}
+
+.popup__input {
+  padding: 12px 15px;
+  transition: 0.4s;
+  border-radius: 30px;
+  border-color: transparent;
+
+  &:hover {
+    border: 2px solid $red;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 15px 20px;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 20px 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 25px 30px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+
+  // &:focus {
+  //   border: 2px solid $black;
+  // }
+}
+
+.popup__work-list {
+  padding: 12px 15px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $red;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 15px 20px;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 20px 25px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    padding: 25px 30px;
+  }
+}
+
+.popup__button {
+  cursor: pointer;
+  transition: 0.4s;
+
+  &--close {
+    position: absolute;
+    top: -55px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    background-image: url("./icons/close.svg");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: none;
+    border-radius: 30px;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+
+  &--send {
+    font-weight: 100;
+    color: $white;
+    background-color: $waterblue;
+    width: max-content;
+    margin: 0 auto;
+    padding: 15px 25px;
+    border: 1px solid $waterblue;
+    border-radius: 30px;
+
+    &:hover {
+      color: $waterblue;
+      background-color: $white;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &--close {
+      top: -70px;
+      width: 50px;
+      height: 50px;
+    }
+
+    &--send {
+      font-size: 15px;
+      padding: 18px 30px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--close {
+      top: -85px;
+      width: 60px;
+      height: 60px;
+    }
+
+    &--send {
+      font-size: 18px;
+    }
+  }
+}

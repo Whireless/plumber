@@ -1,28 +1,16 @@
 .container {
   margin: 0 auto;
-  padding: 35px 20px;
-
-  @media (min-width: $smart) {
-    padding: 45px 30px;
-  }
+  padding: 35px 15px;
 
   @media (min-width: $tablet) {
-    padding: 65px 40px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 75px 45px;
-  }
-
-  @media (min-width: $desktopPlus) {
-    padding: 85px 60px;
+    padding: 65px 35px;
   }
 
   @media (min-width: $laptop) {
-    padding: 95px 80px;
+    padding: 85px 55px;
   }
 
-  @media (min-width: $laptopPlus) {
-    padding: 100px 100px;
+  @media (min-width: $desktop) {
+    padding: 115px 100px;
   }
 }

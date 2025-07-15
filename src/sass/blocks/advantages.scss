@@ -1,6 +1,6 @@
 .advantages {
   background-color: $lightblue;
-  scroll-margin-top: 1em;
+  scroll-margin-top: 3em;
 }
 
 .advantages__title {
@@ -12,10 +12,6 @@
   flex-direction: column;
   row-gap: 25px;
 
-  @media (min-width: $smart) {
-    row-gap: 35px;
-  }
-
   @media (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -23,17 +19,13 @@
     gap: 38px;
   }
 
-  @media (min-width: $desktop) {
-    gap: 40px;
-  }
-
-  @media (min-width: $desktopPlus) {
+  @media (min-width: $laptop) {
     gap: 50px;
   }
 
-  @media (min-width: $laptop) {
-    gap: 55px;
-  }
+  // @media (min-width: $desktop) {
+  //   gap: 40px;
+  // }
 }
 
 .advantages__item {
@@ -76,22 +68,20 @@
   }
 
   @media (min-width: $tablet) {
-    width: 293px;
+    width: 298px;
+  }
+
+  @media (min-width: $laptop) {
+    background-size: 65px 65px;
+    width: 316px;
+    padding: 90px 20px 20px 20px;
   }
 
   @media (min-width: $desktop) {
-    width: 271px;
     justify-content: center;
-  }
-
-  @media (min-width: $desktopPlus) {
-    background-size: 65px 65px;
-    width: 300px;
-    padding: 85px 20px 20px 20px;
-  }
-
-  @media (min-width: $laptopPlus) {
-    width: 336px;
+    width: 490px;
+    background-size: 75px 75px;
+    padding: 110px 25px 25px 25px;
   }
 }
 
@@ -104,16 +94,12 @@
     margin-top: 50px;
   }
 
-  @media (min-width: $desktop) {
-    margin-top: 60px;
-  }
-
-  @media (min-width: $desktopPlus) {
+  @media (min-width: $laptop) {
     margin-top: 70px;
   }
 
-  @media (min-width: $laptopPlus) {
-    margin-top: 80px;
+  @media (min-width: $desktop) {
+    margin-top: 85px;
   }
 }
 
@@ -123,17 +109,22 @@
 
 .advantages__num {
   text-decoration: underline;
-  font-size: 27px;
-  line-height: 33px;
+  font-size: 28px;
+  line-height: 34px;
   color: $waterblue;
 
   @media (min-width: $tablet) {
-    font-size: 31px;
-    line-height: 38px;
+    font-size: 32px;
+    line-height: 39px;
   }
 
-  @media (min-width: $desktopPlus) {
-    font-size: 36px;
-    line-height: 43px;
+  @media (min-width: $laptop) {
+    font-size: 37px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 41px;
+    line-height: 48px;
   }
 }
