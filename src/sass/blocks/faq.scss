@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 10px;
+  row-gap: 15px;
 
   @media (min-width: $tablet) {
-    row-gap: 15px;
+    row-gap: 20px;
   }
 
   @media (min-width: $laptop) {

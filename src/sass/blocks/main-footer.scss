@@ -115,11 +115,11 @@
 .main-footer__button-up {
   position: fixed;
   bottom: 35px;
-  right: 20px;
-  width: 42px;
-  height: 42px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
   background-color: $white;
-  background-image: url("../icons/arrow.svg");
+  background-image: url("/icons/arrow.svg");
   border: 1px solid $waterblue;
   border-radius: 50%;
   opacity: 0;
@@ -132,20 +132,22 @@
   }
 
   @media (min-width: $tablet) {
-    right: 40px;
+    right: 35px;
     bottom: 50px;
-    width: 45px;
-    height: 45px;
-  }
-
-  @media (min-width: $laptop) {
-    right: 60px;
     width: 50px;
     height: 50px;
   }
 
+  @media (min-width: $laptop) {
+    right: 55px;
+    width: 55px;
+    height: 55px;
+  }
+
   @media (min-width: $desktop) {
-    right: 45px;
-    bottom: 70px;
+    right: 100px;
+    bottom: 80px;
+    width: 65px;
+    height: 65px;
   }
 }

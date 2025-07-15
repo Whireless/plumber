@@ -27,7 +27,7 @@
   right: 15px;
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 25px;
   width: 305px;
   margin: 0 auto;
   padding: 25px 20px;
@@ -55,7 +55,7 @@
 .popup__inputs {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 20px;
   border: none;
 
   @media (min-width: $desktop) {
@@ -129,7 +129,7 @@
     right: 0px;
     width: 40px;
     height: 40px;
-    background-image: url("./icons/close.svg");
+    background-image: url("/icons/close.svg");
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: 50%;
