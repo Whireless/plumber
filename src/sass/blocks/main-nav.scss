@@ -14,6 +14,10 @@
     .main-nav__list {
       transform: translateX(0%);
     }
+
+    .main-nav__button {
+      transform: rotate(90deg);
+    }
   }
 
   @media (min-width: $tablet) {
@@ -132,6 +136,8 @@
   border: none;
   cursor: pointer;
   margin-left: auto;
+  transition: 0.4s;
+  transform: rotate(0deg);
 
   @media (min-width: $tablet) {
     display: none;

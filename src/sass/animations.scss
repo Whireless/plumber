@@ -1,0 +1,11 @@
+@keyframes headerArrow {
+  0% {
+    transform: rotate(90deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(90deg) translateY(-12px);
+  }
+  100% {
+    transform: rotate(90deg) translateY(0px);
+  }
+}

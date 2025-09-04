@@ -7,9 +7,8 @@
   justify-content: center;
   align-items: center;
   background-color: $waterblue;
-  width: 200px;
   height: 21px;
-  padding: 12px 0;
+  padding: 12px 15px;
   border: 1px solid $waterblue;
   border-radius: 30px;
   transition: 0.4s;
@@ -20,8 +19,7 @@
   }
 
   &--feedback {
-    height: 45px;
-    margin-top: 15px;
+    height: 47px;
     cursor: pointer;
   }
 
@@ -30,10 +28,10 @@
   }
 
   @media (min-width: $tablet) {
-    grid-column: 2;
-    justify-self: center;
+    padding: 10px 15px;
 
     &--feedback {
+      height: 43px;
       margin: 0;
     }
 
@@ -43,11 +41,11 @@
   }
 
   @media (min-width: $laptop) {
-    height: 31px;
+    height: 30px;
+    padding: 10px 25px;
 
     &--feedback {
-      height: 55px;
-      margin-left: 35px;
+      height: 52px;
     }
 
     &--repair {
@@ -57,12 +55,10 @@
 
   @media (min-width: $desktop) {
     font-size: 21px;
-    width: 250px;
     height: 39px;
 
     &--feedback {
-      height: 66px;
-      margin-left: 55px;
+      height: 61px;
     }
 
     &--repair {

@@ -33,17 +33,18 @@
 
   @media (min-width: $tablet) {
     width: 646px;
-    padding: 20px 25px;
+    padding: 15px 25px;
   }
 
   @media (min-width: $laptop) {
     width: 1108px;
-    padding: 25px 30px;
+    padding: 20px 30px;
+    border-radius: 35px;
   }
 
   @media (min-width: $desktop) {
     width: 1658px;
-    padding: 30px 35px;
+    padding: 25px 35px;
   }
 }
 
